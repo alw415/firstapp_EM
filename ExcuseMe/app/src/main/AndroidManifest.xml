@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.andrewwhitehead.excuseme">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".opening_screen"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="StudentScreen"
+            android:name=".student_log" >
+        </activity>
+        <activity
+            android:label="TeacherScreen"
+            android:name=".teacher_log" >
+        </activity>
+        <activity
+            android:label="AdminScreen"
+            android:name=".admin_log" >
+        </activity>
+        <activity
+            android:label="AvailableClasses"
+            android:name=".student_avail_classes" >
+        </activity>
+        <activity
+            android:label="Sfeed"
+            android:name=".student_feed">
+        </activity>
+        <activity
+            android:label="AdminHomePage"
+            android:name=".admin_HP" >
+        </activity>
+        <activity
+            android:label="AdminViewNewRequests"
+            android:name=".admin_VNR" >
+        </activity>
+        <activity
+            android:label="AdminDelete"
+            android:name=".admin_delete_classes" >
+        </activity>
+        <activity
+            android:label="RequestNewClass"
+            android:name=".RNC" >
+        </activity>
+        <activity
+            android:label="Start_Retrieve_Class"
+            android:name=".SRF" >
+        </activity>
+        <activity
+            android:label="Tfeed"
+            android:name=".teacher_feed">
+        </activity>
+        <activity
+            android:label="TeacherHomePage"
+            android:name=".teacher_home" >
+        </activity>
+        <activity
+            android:label="TeacherListOfClasses"
+            android:name=".teacher_list_of_classes" >
+        </activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

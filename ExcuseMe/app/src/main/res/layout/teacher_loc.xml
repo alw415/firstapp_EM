@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:text="Search for class:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/S4C2"
+        android:textAppearance="@style/TextAppearance.StatusBar.EventContent.Info" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:layout_below="@+id/S4C2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/search_for_class_value" />
+
+    <Button
+        android:text="Search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/S4C"
+        android:layout_alignTop="@+id/search_for_class_value"
+        android:layout_toRightOf="@+id/search_for_class_value"
+        android:layout_toEndOf="@+id/search_for_class_value" />
+
+    <TextView
+        android:text="Pick a class:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PKC"
+        android:textAppearance="@style/TextAppearance.StatusBar.EventContent.Info"
+        android:layout_below="@+id/S4C"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="36dp" />
+
+    <TextView
+        android:text="Class info: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/PKC"
+        android:layout_alignLeft="@+id/S4C"
+        android:layout_alignStart="@+id/S4C"
+        android:id="@+id/Info"
+        android:textAppearance="@style/TextAppearance.StatusBar.EventContent.Info" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:layout_below="@+id/Info"
+        android:layout_alignLeft="@+id/Info"
+        android:layout_alignStart="@+id/Info"
+        android:layout_marginTop="15dp"
+        android:id="@+id/editText6" />
+
+    <Button
+        android:text="Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/B2TH"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Feeds ->"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/F2F"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/B2TH"
+        android:layout_toEndOf="@+id/B2TH" />
+
+    <Button
+        android:text="Delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/delete_class"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

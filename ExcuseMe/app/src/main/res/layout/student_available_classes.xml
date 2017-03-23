@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/AvailClasses"
+        android:layout_weight="1"
+        android:text = "Classes Available for: "
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sUser"
+        android:layout_weight="1"
+        android:text = ""
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:layout_below="@+id/AvailClasses"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="435dp"
+        android:layout_below="@+id/AvailClasses"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:fillViewport="true">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns = "1" >
+
+            <TableRow>
+                <CheckBox
+                    android:id= "@+id/class1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp" />
+            </TableRow>
+            <TableRow>
+                <CheckBox
+                    android:id="@+id/class2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp" />
+            </TableRow>
+            <TableRow>
+                <CheckBox
+                    android:id="@+id/class3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"/>
+            </TableRow>
+            <TableRow>
+                <CheckBox
+                    android:id="@+id/class4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"/>
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+    <Button
+        android:text="Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="437dp"
+        android:id="@+id/B2SL"
+        android:layout_below="@+id/AvailClasses"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Go To Class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/GTC"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="9dp" />
+
+
+</RelativeLayout>
+

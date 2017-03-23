@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="400dp"
+        android:id="@+id/scrollView2">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns = "1" >
+
+            <TableRow>
+                <CheckBox
+                    android:id= "@+id/newclass1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp" />
+            </TableRow>
+            <TableRow>
+                <CheckBox
+                    android:id="@+id/newclass2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp" />
+            </TableRow>
+            <TableRow>
+                <CheckBox
+                    android:id="@+id/newclass3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"/>
+            </TableRow>
+            <TableRow>
+                <CheckBox
+                    android:id="@+id/newclass4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"/>
+            </TableRow>
+            <TableRow>
+                <CheckBox
+                    android:id="@+id/newclass5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"/>
+
+            </TableRow>
+            <TableRow>
+                <CheckBox
+                    android:id="@+id/newclass6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"/>
+
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+    <Button
+        android:text="Create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CC"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/scrollView2" />
+
+    <Button
+        android:text="Done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/scrollView2" />
+
+    <TextView
+        android:text="New Class Requests"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView3"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title" />
+
+
+</RelativeLayout>

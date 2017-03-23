@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Class Name:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ClassName"
+        android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
+        android:layout_alignBaseline="@+id/class_name_value"
+        android:layout_alignBottom="@+id/class_name_value"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/class_name_value"
+        android:layout_weight="1"
+        android:layout_marginLeft="49dp"
+        android:layout_marginStart="49dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/ClassName"
+        android:layout_toEndOf="@+id/ClassName" />
+
+    <TextView
+        android:text="Teacher Name:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/class_name_value"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="59dp"
+        android:id="@+id/TeacherName"
+        android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle" />
+
+    <TextView
+        android:text="Teacher Email:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="83dp"
+        android:id="@+id/TeacherEmail"
+        android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
+        android:layout_below="@+id/TeacherName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Student Emails:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:id="@+id/StudentEmails"
+        android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"
+        android:layout_below="@+id/TeacherEmail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:layout_below="@+id/class_name_value"
+        android:layout_alignRight="@+id/class_name_value"
+        android:layout_alignEnd="@+id/class_name_value"
+        android:layout_marginTop="47dp"
+        android:id="@+id/teacher_name_value" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_below="@+id/teacher_email_value"
+        android:layout_alignRight="@+id/teacher_email_value"
+        android:layout_alignEnd="@+id/teacher_email_value"
+        android:layout_marginTop="51dp"
+        android:id="@+id/student_email_values" />
+
+    <Button
+        android:text="Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/student_email_values"
+        android:layout_alignStart="@+id/student_email_values"
+        android:layout_marginLeft="61dp"
+        android:layout_marginStart="61dp"
+        android:id="@+id/StA" />
+
+    <Button
+        android:text="Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/B2THP"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/StudentEmails"
+        android:layout_toEndOf="@+id/StudentEmails" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/teacher_email_value"
+        android:layout_alignBaseline="@+id/TeacherEmail"
+        android:layout_alignBottom="@+id/TeacherEmail"
+        android:layout_alignLeft="@+id/teacher_name_value"
+        android:layout_alignStart="@+id/teacher_name_value" />
+
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="400dp"
+        android:id="@+id/scrollView1">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns = "1" >
+
+            <TableRow>
+                <CheckBox
+                    android:id= "@+id/deleteclass1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp" />
+            </TableRow>
+            <TableRow>
+                <CheckBox
+                    android:id="@+id/deleteclass2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp" />
+            </TableRow>
+            <TableRow>
+                <CheckBox
+                    android:id="@+id/deleteclass3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"/>
+            </TableRow>
+            <TableRow>
+                <CheckBox
+                    android:id="@+id/deleteclass4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"/>
+            </TableRow>
+            <TableRow>
+                <CheckBox
+                    android:id="@+id/deleteclass5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"/>
+
+            </TableRow>
+            <TableRow>
+                <CheckBox
+                    android:id="@+id/deleteclass6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"/>
+
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+    <Button
+        android:text="Delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/DelC"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/scrollView1" />
+    <Button
+        android:text="Reactivate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ReactivateC"
+        android:layout_below="@+id/scrollView1"
+        android:layout_toRightOf="@+id/DelC" />
+
+    <Button
+        android:text="Done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/donebutton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/scrollView1" />
+
+    <TextView
+        android:text="Delete Classes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title" />
+
+
+</RelativeLayout>
